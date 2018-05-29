@@ -21,7 +21,7 @@ public class Singleton4 {
 		if(instance == null) {
 			//同步代码块（对象未初始化时，使用同步代码块，保证多线程访问时对象在第一次创建后，不在重复被创建）
 			synchronized(Singleton4.class) {
-				//未初始化，则初始化instance变量
+				//未初始化，则初始化instance变量 u
 				if(instance == null) {
 					instance = new Singleton4();
 				}
